@@ -1,0 +1,163 @@
+{
+  "address": "0xb2d2d4358d9361F25D3fD4CaB6426a996b95Db26",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "num",
+          "type": "uint256"
+        }
+      ],
+      "name": "AddNum",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "num",
+          "type": "uint256"
+        }
+      ],
+      "name": "SetNum",
+      "type": "event"
+    },
+    {
+      "stateMutability": "nonpayable",
+      "type": "fallback"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "num",
+          "type": "uint256"
+        }
+      ],
+      "name": "addNum",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getCurrentNumber",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getOwner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "num",
+          "type": "uint256"
+        }
+      ],
+      "name": "setNum",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "transactionHash": "0xe8ef4e53c16902a14b09f60b3eeff9b96700a44d830931591bcc98510712aa59",
+  "receipt": {
+    "to": null,
+    "from": "0x294e0bCC654D249eA6EF17f9f83d20B58999C921",
+    "contractAddress": "0xb2d2d4358d9361F25D3fD4CaB6426a996b95Db26",
+    "transactionIndex": 107,
+    "gasUsed": "250805",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x1c8f57bca01d6e49070dfd55c0bc9372b84ea225988ec58b06f7035c01d82f03",
+    "transactionHash": "0xe8ef4e53c16902a14b09f60b3eeff9b96700a44d830931591bcc98510712aa59",
+    "logs": [],
+    "blockNumber": 6356684,
+    "cumulativeGasUsed": "16397226",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "fd69da3b879978bd2dfb7216417117f2",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"num\",\"type\":\"uint256\"}],\"name\":\"AddNum\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"num\",\"type\":\"uint256\"}],\"name\":\"SetNum\",\"type\":\"event\"},{\"stateMutability\":\"nonpayable\",\"type\":\"fallback\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"num\",\"type\":\"uint256\"}],\"name\":\"addNum\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getCurrentNumber\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"num\",\"type\":\"uint256\"}],\"name\":\"setNum\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"constructor\":{\"details\":\"Contract constructor .\"},\"getCurrentNumber()\":{\"details\":\"Returns Current Number.\",\"returns\":{\"_0\":\"currentNum Returns currentNum.\"}},\"getOwner()\":{\"details\":\"Returns owner.\",\"returns\":{\"_0\":\"i_owner address.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/ChainlinkAutomationTest.sol\":\"ChainlinkAutomationTest\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/ChainlinkAutomationTest.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.19;\\n\\ncontract ChainlinkAutomationTest {\\n    /*\\n     *  Events\\n     */\\n    event AddNum(uint256 indexed num);\\n    event SetNum(uint256 indexed num);\\n    /*\\n     *  Constants\\n     */\\n\\n    /*\\n     *  Storage\\n     */\\n    address immutable i_owner;\\n    uint256 currentNum;\\n    /*\\n     *  Modifiers\\n     */\\n\\n    modifier onlyOwner() {\\n        require(msg.sender == i_owner);\\n        _;\\n    }\\n\\n    /// @dev Fallback function allows to deposit ether.\\n    receive() external payable {}\\n\\n    fallback() external {}\\n\\n    /*\\n     * Public functions\\n     */\\n    /// @dev Contract constructor .\\n    constructor(){\\n        i_owner = msg.sender;\\n    }\\n\\n    function addNum(\\n        uint256 num\\n    ) public {\\n        currentNum+=num;\\n        emit AddNum(currentNum);\\n    }\\n\\n    function setNum(uint256 num) external onlyOwner{\\n        currentNum = num;\\n        emit SetNum(currentNum);\\n    }\\n\\n    /// @dev Returns owner.\\n    /// @return i_owner address.\\n    function getOwner() public view returns (address) {\\n        return i_owner;\\n    }\\n\\n    /// @dev Returns Current Number.\\n    /// @return currentNum Returns currentNum.\\n    function getCurrentNumber() public view returns (uint256) {\\n        return currentNum;\\n    }\\n}\\n\",\"keccak256\":\"0xfbc8b8a512736cf6abac01223229265b1122029588753608fe8046ea5c968c6f\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60a060405234801561001057600080fd5b503373ffffffffffffffffffffffffffffffffffffffff1660808173ffffffffffffffffffffffffffffffffffffffff168152505060805161039361006760003960008181610157015261017d01526103936000f3fe6080604052600436106100435760003560e01c80635c2fbc3e146100585780637527836214610083578063893d20e8146100ac578063cd16ecbf146100d75761004a565b3661004a57005b34801561005657600080fd5b005b34801561006457600080fd5b5061006d610100565b60405161007a9190610225565b60405180910390f35b34801561008f57600080fd5b506100aa60048036038101906100a59190610271565b610109565b005b3480156100b857600080fd5b506100c1610153565b6040516100ce91906102df565b60405180910390f35b3480156100e357600080fd5b506100fe60048036038101906100f99190610271565b61017b565b005b60008054905090565b8060008082825461011a9190610329565b925050819055506000547f8fdf6ae92aea1ef806935daa8763c1fdeeb79e0e82fb9c903dde9b215c99180f60405160405180910390a250565b60007f0000000000000000000000000000000000000000000000000000000000000000905090565b7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146101d357600080fd5b806000819055506000547fb5935c88bd7d0674485c795b55eaee89e1abe11ad6edb1d7c2bda64e2ca2d58660405160405180910390a250565b6000819050919050565b61021f8161020c565b82525050565b600060208201905061023a6000830184610216565b92915050565b600080fd5b61024e8161020c565b811461025957600080fd5b50565b60008135905061026b81610245565b92915050565b60006020828403121561028757610286610240565b5b60006102958482850161025c565b91505092915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60006102c98261029e565b9050919050565b6102d9816102be565b82525050565b60006020820190506102f460008301846102d0565b92915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b60006103348261020c565b915061033f8361020c565b9250828201905080821115610357576103566102fa565b5b9291505056fea2646970667358221220d3186dce74e9211d6122b3e27f7e5bd4c53505a83e781078c614bb815209de3e64736f6c63430008140033",
+  "deployedBytecode": "0x6080604052600436106100435760003560e01c80635c2fbc3e146100585780637527836214610083578063893d20e8146100ac578063cd16ecbf146100d75761004a565b3661004a57005b34801561005657600080fd5b005b34801561006457600080fd5b5061006d610100565b60405161007a9190610225565b60405180910390f35b34801561008f57600080fd5b506100aa60048036038101906100a59190610271565b610109565b005b3480156100b857600080fd5b506100c1610153565b6040516100ce91906102df565b60405180910390f35b3480156100e357600080fd5b506100fe60048036038101906100f99190610271565b61017b565b005b60008054905090565b8060008082825461011a9190610329565b925050819055506000547f8fdf6ae92aea1ef806935daa8763c1fdeeb79e0e82fb9c903dde9b215c99180f60405160405180910390a250565b60007f0000000000000000000000000000000000000000000000000000000000000000905090565b7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146101d357600080fd5b806000819055506000547fb5935c88bd7d0674485c795b55eaee89e1abe11ad6edb1d7c2bda64e2ca2d58660405160405180910390a250565b6000819050919050565b61021f8161020c565b82525050565b600060208201905061023a6000830184610216565b92915050565b600080fd5b61024e8161020c565b811461025957600080fd5b50565b60008135905061026b81610245565b92915050565b60006020828403121561028757610286610240565b5b60006102958482850161025c565b91505092915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60006102c98261029e565b9050919050565b6102d9816102be565b82525050565b60006020820190506102f460008301846102d0565b92915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b60006103348261020c565b915061033f8361020c565b9250828201905080821115610357576103566102fa565b5b9291505056fea2646970667358221220d3186dce74e9211d6122b3e27f7e5bd4c53505a83e781078c614bb815209de3e64736f6c63430008140033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "constructor": {
+        "details": "Contract constructor ."
+      },
+      "getCurrentNumber()": {
+        "details": "Returns Current Number.",
+        "returns": {
+          "_0": "currentNum Returns currentNum."
+        }
+      },
+      "getOwner()": {
+        "details": "Returns owner.",
+        "returns": {
+          "_0": "i_owner address."
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 13,
+        "contract": "contracts/ChainlinkAutomationTest.sol:ChainlinkAutomationTest",
+        "label": "currentNum",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

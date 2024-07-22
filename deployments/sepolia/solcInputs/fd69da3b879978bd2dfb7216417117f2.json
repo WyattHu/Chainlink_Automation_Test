@@ -1,0 +1,36 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/ChainlinkAutomationTest.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.19;\n\ncontract ChainlinkAutomationTest {\n    /*\n     *  Events\n     */\n    event AddNum(uint256 indexed num);\n    event SetNum(uint256 indexed num);\n    /*\n     *  Constants\n     */\n\n    /*\n     *  Storage\n     */\n    address immutable i_owner;\n    uint256 currentNum;\n    /*\n     *  Modifiers\n     */\n\n    modifier onlyOwner() {\n        require(msg.sender == i_owner);\n        _;\n    }\n\n    /// @dev Fallback function allows to deposit ether.\n    receive() external payable {}\n\n    fallback() external {}\n\n    /*\n     * Public functions\n     */\n    /// @dev Contract constructor .\n    constructor(){\n        i_owner = msg.sender;\n    }\n\n    function addNum(\n        uint256 num\n    ) public {\n        currentNum+=num;\n        emit AddNum(currentNum);\n    }\n\n    function setNum(uint256 num) external onlyOwner{\n        currentNum = num;\n        emit SetNum(currentNum);\n    }\n\n    /// @dev Returns owner.\n    /// @return i_owner address.\n    function getOwner() public view returns (address) {\n        return i_owner;\n    }\n\n    /// @dev Returns Current Number.\n    /// @return currentNum Returns currentNum.\n    function getCurrentNumber() public view returns (uint256) {\n        return currentNum;\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "evmVersion": "paris",
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
